@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact - Mir Hasnain</title>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+<!-- Navbar -->
+<div class="navbar bg-white shadow-md px-6 lg:px-16">
+<div class="flex-1">
+<a href="index.html" class="text-xl font-bold text-green-600">Mir Hasnain</a>
+</div>
+<div class="hidden md:flex gap-3">
+<a href="index.html" class="btn btn-ghost">Home</a>
+<a href="about.html" class="btn btn-ghost">About</a>
+<a href="skills.html" class="btn btn-ghost">Skills</a>
+<a href="travel.html" class="btn btn-ghost">Travel</a>
+<a href="contact.html" class="btn btn-success">Contact</a>
+</div>
+</div>
+
+<!-- Header -->
+<section class="text-center py-16 px-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white">
+<h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Me</h1>
+<p class="max-w-2xl mx-auto text-lg">
+If you want to work with me, discuss a project, or ask any question 
+about web development and freelancing, feel free to contact me.
+</p>
+</section>
+
+<!-- Contact Section -->
+<section class="max-w-6xl mx-auto px-4 py-20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+<!-- Contact Info -->
+<div class="space-y-6">
+<h2 class="text-3xl font-bold text-green-600">Let's Connect</h2>
+<p class="text-gray-600">
+I am always open to new freelance opportunities, collaboration 
+and interesting web development projects.
+</p>
+
+<!-- Location -->
+<div class="flex items-center gap-3">
+<i class="fa-solid fa-location-dot text-green-600 text-xl"></i>
+<a href="https://maps.app.goo.gl/uxT6rwnXCqzVYUjbA?g_st=aw" target="_blank" class="text-green-600 font-semibold hover:underline">
+Dhaka, Bangladesh
+</a>
+</div>
+
+<!-- Email -->
+<div class="flex items-center gap-3">
+<i class="fa-solid fa-envelope text-green-600 text-xl"></i>
+<a href="mailto:hasnainahamed24@gmail.com
+" class="text-green-600 font-semibold hover:underline">
+hasnainahamed24@gmail.com
+
+</a>
+</div>
+
+<!-- WhatsApp -->
+<div class="flex items-center gap-3">
+<i class="fa-brands fa-whatsapp text-green-600 text-xl"></i>
+<a href="https://wa.me/8801609038742" target="_blank" class="text-green-600 font-semibold hover:underline">
++880 1609-038742
+</a>
+</div>
+
+<!-- Social Icons -->
+<div class="flex gap-4 pt-4 text-2xl text-green-600">
+<a href="https://www.facebook.com/hasnain.ahamed24" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://www.linkedin.com/in/hasnain-ahamed-4007b5352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+<a href="https://x.com/HasnainAhamed14" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+<a href="https://www.instagram.com/hasnainahamed24?igsh=MWVqNW44ejdpMWlpbw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+</div>
+</div>
+
+<!-- Contact Form -->
+<div class="card bg-white shadow-xl p-6">
+<form class="space-y-4" onsubmit="sendMessage(event)">
+<input type="text" placeholder="Your Name" class="input input-bordered w-full" required/>
+<input type="email" placeholder="Your Email" class="input input-bordered w-full" required/>
+<input type="text" placeholder="Subject (Project, Freelance Work, Question)" class="input input-bordered w-full" required/>
+<textarea class="textarea textarea-bordered w-full h-32" placeholder="Write your message here..." required></textarea>
+<button type="submit" class="btn btn-success w-full text-lg  border border-purple-400">Send Message</button>
+</form>
+</div>
+
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gradient-to-r from-green-600 to-emerald-500 text-white py-8 mt-auto">
+<div class="text-center">
+<h2 class="text-xl font-bold">Mir Hasnain</h2>
+<p>Freelancer • Web Developer • Traveler</p>
+<p class="text-sm opacity-80">© 2026 All Rights Reserved</p>
+</div>
+</footer>
+
+<script>
+function sendMessage(event){
+  event.preventDefault();
+  alert("Your message has been sent! I will contact you soon.");
+}
+</script>
+
+</body>
+</html>
