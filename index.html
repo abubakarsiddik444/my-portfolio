@@ -6,6 +6,9 @@
 
 <title>Mir Hasnain - Portfolio</title>
 
+<!-- logo -->
+ <link rel="shortcut icon" href="./assets/mh.png" type="image/x-icon">
+
 <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -14,18 +17,76 @@
 <body class="bg-gray-100 min-h-screen flex flex-col">
 
 <!-- Navbar -->
-<div class="navbar bg-white shadow-md px-6 lg:px-16">
-<div class="flex-1">
-<a href="index.html" class="text-xl font-bold text-green-600">Mir Hasnain</a>
+
+<!-- <div class="navbar bg-white shadow-md px-6 lg:px-16">
+
+  <div class="flex-1 flex items-center gap-1">
+
+    <img src="./assets/mh.png" alt="logo" class="w-16 h-16 object-contain">
+
+    <a href="index.html"
+      class="text-xl md:text-2xl font-extrabold bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent">
+      MIR HASNAIN
+    </a>
 </div>
-<div class="hidden md:flex gap-3">
+<div class="flex gap-2 flex-wrap">
 <a href="index.html" class="btn btn-active btn-success">Home</a>
 <a href="about.html" class="btn btn-ghost">About</a>
 <a href="skills.html" class="btn btn-ghost">Skills</a>
 <a href="travel.html" class="btn btn-ghost">Travel</a>
 <a href="contact.html" class="btn btn-ghost">Contact</a>
 </div>
+</div> -->
+
+
+
+<!-- 2nd -->
+
+<div class="navbar bg-white shadow-md px-6 lg:px-16">
+  <div class="flex-1 flex items-center gap-1">
+    <img src="./assets/mh.png" alt="logo" class="w-16 h-16 object-contain">
+    <a href="index.html"
+       class="text-xl md:text-2xl font-extrabold bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent">
+       MIR HASNAIN
+    </a>
+  </div>
+
+  <!-- Mobile hamburger button -->
+  <div class="flex-none lg:hidden">
+    <button class="btn btn-square btn-ghost" id="menu-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Desktop menu -->
+  <div class="hidden lg:flex gap-2 flex-wrap" id="menu">
+    <a href="index.html" class="btn btn-ghost">Home</a>
+    <a href="about.html" class="btn btn-ghost">About</a>
+    <a href="skills.html" class="btn btn-ghost">Skills</a>
+    <a href="travel.html" class="btn btn-ghost">Travel</a>
+    <a href="contact.html" class="btn btn-ghost">Contact</a>
+  </div>
 </div>
+
+<!-- Mobile menu -->
+<div class="lg:hidden hidden px-6 pb-4" id="mobile-menu">
+  <a href="index.html" class="block py-2 btn btn-ghost w-full">Home</a>
+  <a href="about.html" class="block py-2 btn btn-ghost w-full">About</a>
+  <a href="skills.html" class="block py-2 btn btn-ghost w-full">Skills</a>
+  <a href="travel.html" class="block py-2 btn btn-ghost w-full">Travel</a>
+  <a href="contact.html" class="block py-2 btn btn-ghost w-full">Contact</a>
+</div>
+
+
+
+
+
+
+
 
 <!-- Hero Section -->
 <section class="relative bg-gradient-to-r from-green-400 to-emerald-500 text-white py-32 px-4 md:px-16">
@@ -117,17 +178,17 @@ My goal is to combine <span class="font-semibold text-gray-800">creativity</span
 <h2 class="text-3xl font-bold text-center text-green-600 mb-12">Projects / Freelance Work</h2>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 <div class="card bg-white shadow-xl p-6 hover:scale-105 transition">
-<img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5" class="rounded-xl mb-4 object-cover w-full h-48">
+<img src="./assets/portfolio-website.jpg" class="rounded-xl mb-4 object-cover w-full h-48">
 <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
 <p>Designed a fully responsive portfolio website for a client using React & Tailwind.</p>
 </div>
 <div class="card bg-white shadow-xl p-6 hover:scale-105 transition">
-<img src="https://images.unsplash.com/photo-1581091870624-1f448d1f8880" class="rounded-xl mb-4 object-cover w-full h-48">
+<img src="./assets/e-commerce-project.jpg" class="rounded-xl mb-4 object-cover w-full h-48">
 <h3 class="text-xl font-bold mb-2">E-commerce Project</h3>
 <p>Developed a small e-commerce website using HTML, CSS, and JavaScript.</p>
 </div>
 <div class="card bg-white shadow-xl p-6 hover:scale-105 transition">
-<img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68" class="rounded-xl mb-4 object-cover w-full h-48">
+<img src="./assets/blog-website.jpg" class="rounded-xl mb-4 object-cover w-full h-48">
 <h3 class="text-xl font-bold mb-2">Blog Website</h3>
 <p>Created a blog platform with dynamic content and responsive design.</p>
 </div>

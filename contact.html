@@ -6,6 +6,9 @@
 
 <title>Contact - Mir Hasnain</title>
 
+<!-- logo -->
+ <link rel="shortcut icon" href="./assets/mh.png" type="image/x-icon">
+
 <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -14,18 +17,49 @@
 <body class="bg-gray-100 min-h-screen flex flex-col">
 
 <!-- Navbar -->
+
+
 <div class="navbar bg-white shadow-md px-6 lg:px-16">
-<div class="flex-1">
-<a href="index.html" class="text-xl font-bold text-green-600">Mir Hasnain</a>
+  <div class="flex-1 flex items-center gap-1">
+    <img src="./assets/mh.png" alt="logo" class="w-16 h-16 object-contain">
+    <a href="index.html"
+       class="text-xl md:text-2xl font-extrabold bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent">
+       MIR HASNAIN
+    </a>
+  </div>
+
+  <!-- Mobile hamburger button -->
+  <div class="flex-none lg:hidden">
+    <button class="btn btn-square btn-ghost" id="menu-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Desktop menu -->
+  <div class="hidden lg:flex gap-2 flex-wrap" id="menu">
+    <a href="index.html" class="btn btn-ghost">Home</a>
+    <a href="about.html" class="btn btn-ghost">About</a>
+    <a href="skills.html" class="btn btn-ghost">Skills</a>
+    <a href="travel.html" class="btn btn-ghost">Travel</a>
+    <a href="contact.html" class="btn btn-ghost">Contact</a>
+  </div>
 </div>
-<div class="hidden md:flex gap-3">
-<a href="index.html" class="btn btn-ghost">Home</a>
-<a href="about.html" class="btn btn-ghost">About</a>
-<a href="skills.html" class="btn btn-ghost">Skills</a>
-<a href="travel.html" class="btn btn-ghost">Travel</a>
-<a href="contact.html" class="btn btn-success">Contact</a>
+
+<!-- Mobile menu -->
+<div class="lg:hidden hidden px-6 pb-4" id="mobile-menu">
+  <a href="index.html" class="block py-2 btn btn-ghost w-full">Home</a>
+  <a href="about.html" class="block py-2 btn btn-ghost w-full">About</a>
+  <a href="skills.html" class="block py-2 btn btn-ghost w-full">Skills</a>
+  <a href="travel.html" class="block py-2 btn btn-ghost w-full">Travel</a>
+  <a href="contact.html" class="block py-2 btn btn-ghost w-full">Contact</a>
 </div>
-</div>
+
+
+
 
 <!-- Header -->
 <section class="text-center py-16 px-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white">
@@ -87,10 +121,10 @@ hasnainahamed24@gmail.com
 <!-- Contact Form -->
 <div class="card bg-white shadow-xl p-6">
 <form class="space-y-4" onsubmit="sendMessage(event)">
-<input type="text" placeholder="Your Name" class="input input-bordered w-full" required/>
-<input type="email" placeholder="Your Email" class="input input-bordered w-full" required/>
-<input type="text" placeholder="Subject (Project, Freelance Work, Question)" class="input input-bordered w-full" required/>
-<textarea class="textarea textarea-bordered w-full h-32" placeholder="Write your message here..." required></textarea>
+<input type="text" placeholder="Your Name" class="input input-bordered border border-base-300 rounded-md pl-2 w-full" required/>
+<input type="email" placeholder="Your Email" class="input input-bordered border border-base-300 rounded-md pl-2 w-full" required/>
+<input type="text" placeholder="Subject (Project, Freelance Work, Question)" class="input input-bordered border border-base-300 rounded-md pl-2 w-full" required/>
+<textarea class="textarea textarea-bordered border border-base-300 rounded-md pl-2 w-full h-32" placeholder="Write your message here..." required></textarea>
 <button type="submit" class="btn btn-success w-full text-lg  border border-purple-400">Send Message</button>
 </form>
 </div>
@@ -114,5 +148,9 @@ function sendMessage(event){
 }
 </script>
 
+
+
+
+<script src="./script/main.js"></script>
 </body>
 </html>
