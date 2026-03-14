@@ -116,38 +116,122 @@ class="rounded-xl shadow-2xl w-full md:w-96 lg:w-full object-cover"/>
 </section>
 
 <!-- About Me Preview -->
-<section class="max-w-6xl mx-auto px-4 py-20">
-<h2 class="text-3xl font-bold text-center text-green-600 mb-12">About Me</h2>
+      <section class="max-w-6xl mx-auto px-4 py-20">
+
+<h2 class="text-3xl font-bold text-center text-green-600 mb-12">
+About Me
+</h2>
+
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
 <div class="flex justify-center">
 <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1"
 class="rounded-xl shadow-xl w-64 md:w-80 lg:w-full object-cover"/>
 </div>
+
 <div class="space-y-6">
+
 <p class="text-gray-600">
 I am from <span class="font-semibold text-gray-800">Bhola, Bangladesh</span> and currently living in Dhaka. 
-I have a passion for <span class="font-semibold text-gray-800">web development</span>, freelancing, and exploring new technologies. Over the past few years, I have worked on several projects building <span class="font-semibold text-gray-800">responsive, modern websites</span> for clients.
+I have a passion for <span class="font-semibold text-gray-800">web development</span>, freelancing, and exploring new technologies. 
+Over the past few years, I have worked on several projects building 
+<span class="font-semibold text-gray-800">responsive, modern websites</span> for clients.
 </p>
+
 <p class="text-gray-600">
-Apart from coding, I love <span class="font-semibold text-gray-800">traveling</span>, exploring beaches, hills, lakes, and capturing moments through photography. Traveling inspires my creativity and helps me design better interfaces.
+Apart from coding, I love <span class="font-semibold text-gray-800">traveling</span>, exploring beaches, hills, lakes, and capturing moments through photography. 
+Traveling inspires my creativity and helps me design better interfaces.
 </p>
+
 <p class="text-gray-600">
-My goal is to combine <span class="font-semibold text-gray-800">creativity</span> and <span class="font-semibold text-gray-800">technology</span> to deliver projects that not only look good but also provide seamless user experience. I constantly upgrade my skills and enjoy learning frameworks like <span class="font-semibold text-gray-800">React</span> and <span class="font-semibold text-gray-800">Tailwind CSS</span>.
+My goal is to combine <span class="font-semibold text-gray-800">creativity</span> and 
+<span class="font-semibold text-gray-800">technology</span> to deliver projects that not only look good but also provide seamless user experience. 
+I constantly upgrade my skills and enjoy learning frameworks like 
+<span class="font-semibold text-gray-800">React</span> and 
+<span class="font-semibold text-gray-800">Tailwind CSS</span>.
 </p>
+
+<!-- Skill Buttons -->
+
 <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
-<div class="badge badge-success p-4 text-lg">HTML</div>
-<div class="badge badge-success p-4 text-lg">CSS</div>
-<div class="badge badge-success p-4 text-lg">Tailwind</div>
-<div class="badge badge-success p-4 text-lg">JavaScript</div>
-<div class="badge badge-success p-4 text-lg">React</div>
-<div class="badge badge-success p-4 text-lg">Freelancing</div>
+
+<button onclick="openSkillModal('html')" class="badge btn bg-orange-500 badge-success p-4 text-lg hover:scale-105 transition cursor-pointer">
+HTML
+</button>
+
+<button onclick="openSkillModal('css')" class="badge btn bg-blue-600 badge-success p-4 text-lg hover:scale-105 transition cursor-pointer">
+CSS
+</button>
+
+<button onclick="openSkillModal('tailwind')" class="badge btn bg-blue-400 badge-success p-4 text-lg hover:scale-105 transition cursor-pointer">
+Tailwind
+</button>
+
+<button onclick="openSkillModal('js')" class="badge btn bg-yellow-400 badge-success p-4 text-lg hover:scale-105 transition cursor-pointer">
+JavaScript
+</button>
+
+<button onclick="openSkillModal('react')" class="badge btn bg-blue-400 badge-success p-4 text-lg hover:scale-105 transition cursor-pointer">
+React
+</button>
+
+<button onclick="openSkillModal('freelancing')" class="badge btn bg-green-400 badge-success p-4 text-lg hover:scale-105 transition cursor-pointer">
+Freelancing
+</button>
+
+</div>
+
 </div>
 </div>
-</div>
+
 </section>
 
+<!-- max-w-6xl mx-auto px-4 py-20 mt-20  -->
+<!-- Education Section -->
+<section class="max-w-6xl mx-auto px-4 py-20" style="background-color: #E0F7FA; border-radius: 1rem" >
+  <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Education</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- National University Card -->
+    <div class="card bg-white shadow-2xl p-6 hover:scale-105 transition transform duration-300 border-t-8 border-purple-500">
+      <i class="fa-solid fa-university text-4xl text-purple-500 mb-4"></i>
+      <h3 class="text-xl font-bold mb-2 text-purple-700">National University</h3>
+      <p class="text-gray-600 mb-2">Bachelor of Business Studies (BBS)</p>
+      <p class="text-gray-600">Currently pursuing, 2nd year</p>
+    </div>
+
+
+    <!-- Optional Additional Education -->
+    <div class="card bg-white shadow-2xl p-6 hover:scale-105 transition transform duration-300 border-t-8 border-yellow-500">
+      <i class="fa-solid fa-book-open text-4xl text-yellow-500 mb-4"></i>
+      <h3 class="text-xl font-bold mb-2 text-yellow-700">Hatimara College Dhaka</h3>
+      <p class="text-gray-600 mb-2">Higher Secondary Certificate (HSC)</p>
+      <p class="text-gray-600">Completed in 2023</p>
+    </div>
+
+
+    <!-- High School Example Card -->
+    <div class="card bg-white shadow-2xl p-6 hover:scale-105 transition transform duration-300 border-t-8 border-pink-500">
+      <i class="fa-solid fa-school text-4xl text-pink-500 mb-4"></i>
+      <h3 class="text-xl font-bold mb-2 text-pink-700">Nizam Uddin High School</h3>
+      <p class="text-gray-600 mb-2">Secondary School Certificate (SSC)</p>
+      <p class="text-gray-600">Completed in 2021, Ilisha, Bhola</p>
+    </div>
+
+    
+
+  </div>
+</section>
+
+
+
+
+
+
+
 <!-- Skills Section -->
-<section class="max-w-6xl mx-auto px-4 py-20 bg-gray-50">
+<section class="max-w-6xl mx-auto px-4 py-20  mt-10 bg-gray-50">
 <h2 class="text-3xl font-bold text-center text-green-600 mb-12">My Skills</h2>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="card bg-gradient-to-r from-pink-400 to-pink-300 shadow-xl text-white p-6 hover:scale-105 transition">
@@ -217,6 +301,28 @@ Reach out today to start building your digital presence!
 </p>
 <a href="contact.html" class="btn btn-success btn-lg">Contact Me</a>
 </section>
+
+
+
+<!-- modal card  -->
+
+<dialog id="skillModal" class="modal">
+  <div class="modal-box max-w-md">
+
+    <div id="skillContent"></div>
+
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn btn-success">Close</button>
+      </form>
+    </div>
+
+  </div>
+</dialog> 
+
+
+
+
 
 <!-- Footer -->
 <footer class="bg-gradient-to-r from-green-600 to-emerald-500 text-white py-8 mt-auto">
