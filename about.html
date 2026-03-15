@@ -84,9 +84,9 @@ Hi! I am <span class="font-semibold text-green-200">Mir Hasnain</span>, a passio
 
 <!-- About Content -->
 
-<section class="max-w-6xl mx-auto px-4 py-20">
+<section class="max-w-6xl mx-auto px-4 py-20 bg-green-50 rounded-xl">
 
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+<div class="flex flex-col items-center gap-10">
 
 <!-- Profile Image -->
 
@@ -97,36 +97,111 @@ class="rounded-xl shadow-xl w-64 md:w-80 lg:w-96 object-cover"/>
 
 <!-- About Text -->
 
-<div class="space-y-6">
+<div class="space-y-6 text-center">
 
-<h2 class="text-3xl font-bold text-green-600">Who I Am</h2>
+<h2 class="text-4xl font-extrabold bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent">
+Who I Am
+</h2>
 
-<p class="text-gray-600">
-I am from <span class="font-semibold text-gray-800">Bhola, Bangladesh</span> and currently living in Dhaka. 
-I have been learning web development and programming for the past few years. 
-My focus is on creating <span class="font-semibold text-gray-800">modern, responsive and user-friendly websites</span>.
+<p class="text-gray-700 leading-relaxed text-lg max-w-3xl mx-auto">
+Hello! My name is <span class="font-semibold text-green-600">Mir Hasnain</span>. 
+I am a passionate <span class="font-semibold text-blue-600">Freelancer and Web Developer</span> 
+from <span class="font-semibold text-green-600">Bhola, Bangladesh</span> and currently living in 
+<span class="font-semibold text-blue-600">Dhaka</span>. I enjoy creating modern, responsive and 
+user-friendly websites that help businesses and individuals build their online presence.
 </p>
 
-<p class="text-gray-600">
-Apart from coding, I love <span class="font-semibold text-gray-800">traveling</span>, exploring natural places like beaches, hills, lakes and enjoying photography. 
-I believe every new place teaches us something valuable.
+<p class="text-gray-700 leading-relaxed text-lg max-w-3xl mx-auto">
+My journey into web development started with curiosity about how websites work. 
+Over time I began learning technologies such as 
+<span class="font-semibold text-orange-500">HTML</span>, 
+<span class="font-semibold text-blue-500">CSS</span>, 
+<span class="font-semibold text-yellow-500">JavaScript</span>, 
+<span class="font-semibold text-cyan-500">Tailwind CSS</span> 
+and now I am also exploring modern frameworks like 
+<span class="font-semibold text-blue-600">React</span>.
 </p>
 
-<p class="text-gray-600">
-I also work as a freelancer, helping clients to develop websites and digital solutions. 
-I enjoy collaborating with others and always learning new technologies.
+<p class="text-gray-700 leading-relaxed text-lg max-w-3xl mx-auto">
+Apart from coding, I enjoy 
+<span class="font-semibold text-emerald-600">traveling and exploring nature</span>. 
+Visiting beaches, hills and lakes gives me inspiration and fresh ideas. 
+Photography is another hobby that allows me to capture beautiful moments during my travels.
 </p>
 
-<!-- Skills Highlight -->
+<p class="text-gray-700 leading-relaxed text-lg max-w-3xl mx-auto">
+As a freelancer, my goal is to provide high-quality websites that are not only visually attractive 
+but also functional and easy to use. I believe that 
+<span class="font-semibold text-green-600">good design</span> and 
+<span class="font-semibold text-blue-600">clean code</span> together create 
+the best user experience.
+</p>
+
+<!-- Education -->
+
+<h2 class="text-4xl font-extrabold bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent mt-10">
+Education
+</h2>
+
+<p class="text-gray-700 text-lg max-w-3xl mx-auto">
+I have completed my academic journey step by step while continuing to learn web development 
+and modern technologies.
+</p>
+
+<ul class="text-left max-w-3xl mx-auto space-y-4 text-lg text-gray-700">
+
+<li class="bg-white shadow-md p-4 rounded-lg border-l-4 border-green-500">
+<span class="font-semibold text-gray-900">Bachelor of Business Studies (BBS)</span>  
+– Currently studying at <span class="font-semibold text-green-600">National University</span>, Dhaka.
+</li>
+
+<li class="bg-white shadow-md p-4 rounded-lg border-l-4 border-blue-500">
+<span class="font-semibold text-gray-900">Higher Secondary Certificate (HSC)</span>  
+– Hatimara College, Dhaka (2023)
+</li>
+
+<li class="bg-white shadow-md p-4 rounded-lg border-l-4 border-orange-500">
+<span class="font-semibold text-gray-900">Secondary School Certificate (SSC)</span>  
+– Nizam Uddin High School, Bhola (2021)
+</li>
+
+</ul>
+
+<p class="text-gray-700 leading-relaxed text-lg max-w-3xl mx-auto">
+Alongside my academic studies, I continuously learn programming and build projects. 
+I believe <span class="font-semibold text-green-600">learning never stops</span>, 
+so I keep improving my skills every day.
+</p>
+
+</div>
+
+<!-- Skill Buttons -->
 
 <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
 
-<div class="badge badge-success p-4 text-lg">HTML</div>
-<div class="badge badge-success p-4 text-lg">CSS</div>
-<div class="badge badge-success p-4 text-lg">Tailwind</div>
-<div class="badge badge-success p-4 text-lg">JavaScript</div>
-<div class="badge badge-success p-4 text-lg">React</div>
-<div class="badge badge-success p-4 text-lg">Freelancing</div>
+<button onclick="openSkillModal('html')" class="badge btn bg-orange-500 badge-success p-4 text-lg hover:scale-105 transition cursor-pointer">
+HTML
+</button>
+
+<button onclick="openSkillModal('css')" class="badge btn bg-blue-600 badge-success p-4 text-lg hover:scale-105 transition cursor-pointer">
+CSS
+</button>
+
+<button onclick="openSkillModal('tailwind')" class="badge btn bg-blue-400 badge-success p-4 text-lg hover:scale-105 transition cursor-pointer">
+Tailwind
+</button>
+
+<button onclick="openSkillModal('js')" class="badge btn bg-yellow-400 badge-success p-4 text-lg hover:scale-105 transition cursor-pointer">
+JavaScript
+</button>
+
+<button onclick="openSkillModal('react')" class="badge btn bg-blue-400 badge-success p-4 text-lg hover:scale-105 transition cursor-pointer">
+React
+</button>
+
+<button onclick="openSkillModal('freelancing')" class="badge btn bg-green-400 badge-success p-4 text-lg hover:scale-105 transition cursor-pointer">
+Freelancing
+</button>
 
 </div>
 
@@ -135,6 +210,30 @@ I enjoy collaborating with others and always learning new technologies.
 </div>
 
 </section>
+
+
+
+
+
+<!-- modal card  -->
+
+<dialog id="skillModal" class="modal">
+  <div class="modal-box max-w-md">
+
+    <div id="skillContent"></div>
+
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn bg-blue-700 text-white px-5 py-3 text-md">Close</button>
+      </form>
+    </div>
+
+  </div>
+</dialog> 
+
+
+
+
 
 <!-- Footer -->
 

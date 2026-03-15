@@ -50,7 +50,7 @@ const content = document.getElementById("skillContent");
 let data = {
 
 html: `
-<div class="card bg-white">
+<div class="card bg-white shadow-xl border-[2px] border-orange-500">
 <div class="card-body text-center">
 
 <i class="fa-brands fa-html5 text-5xl text-orange-500"></i>
@@ -70,7 +70,7 @@ Building structured and semantic web pages using modern HTML standards.
 `,
 
 css: `
-<div class="card bg-white">
+<div class="card bg-white shadow-xl border-[2px] border-blue-600">
 <div class="card-body text-center">
 
 <i class="fa-brands fa-css3-alt text-5xl text-blue-500"></i>
@@ -90,7 +90,7 @@ Designing responsive layouts and styling modern user interfaces.
 `,
 
 tailwind: `
-<div class="card bg-white">
+<div class="card bg-white shadow-xl border-[2px] border-blue-400">
 <div class="card-body text-center">
 
 <i class="fa-solid fa-wind text-5xl text-cyan-500"></i>
@@ -110,7 +110,7 @@ Creating fast, responsive and modern UI using utility-first CSS.
 `,
 
 js: `
-<div class="card bg-white">
+<div class="card bg-white shadow-xl border-[2px] border-yellow-400">
 <div class="card-body text-center">
 
 <i class="fa-brands fa-js text-5xl text-yellow-400"></i>
@@ -130,7 +130,7 @@ Adding interactivity and dynamic functionality to websites.
 `,
 
 react: `
-<div class="card bg-white">
+<div class="card bg-white shadow-xl border-[2px] border-blue-400">
 <div class="card-body text-center">
 
 <i class="fa-brands fa-react text-5xl text-blue-400"></i>
@@ -150,7 +150,7 @@ Learning modern front-end development using React framework.
 `,
 
 freelancing: `
-<div class="card bg-white">
+<div class="card bg-white shadow-xl border-[2px] border-green-400">
 <div class="card-body text-center">
 
 <i class="fa-solid fa-laptop-code text-5xl text-green-500"></i>
